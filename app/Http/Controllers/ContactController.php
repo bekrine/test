@@ -24,7 +24,6 @@ class ContactController extends Controller
     ->select('contacts.*', 'organisations.nom as entreprise_nom', 'organisations.statut as entreprise_statut')
     ->orderBy($sortColumn, $sortDirection)
     ->paginate(10); 
-
      return view('home', compact('contacts', 'sortColumn', 'sortDirection'));
 }
 
