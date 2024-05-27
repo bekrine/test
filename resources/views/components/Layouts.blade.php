@@ -7,7 +7,7 @@
     <div class="w-full mt-8">
         <x-table :contacts='$contacts' :sortColumn='$sortColumn' :sortDirection="$sortDirection"/>
     </div>
-    <div class="mt-6 p-4">
+    <div class="mt-6 p-4 w-full">
         {{$contacts->links()}}
     </div>
 </div>
